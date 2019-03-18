@@ -25,7 +25,7 @@
 		//document.getElementById("info").innerHTML = "test";
 		var file_path = "json/metadata_car1_1.json";
 		$.getJSON(file_path, function(result){
-		    var string = result.width + " " + result.height;
+		    var string = "width= " + result.width + " height= " + result.height;
 			document.getElementById("info").innerHTML = string;
 			$.each(result, function(i, field){
 				
